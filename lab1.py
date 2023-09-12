@@ -116,7 +116,7 @@ def is_prime_number (N):
     else:
         print(f"Число {N} не є простим, і має {dividers_count} дільників окрім одиниці та самого себе.")
 
-#12.
+#12. завдання 24 зі списку
 def counting_function_result():
     a = round(math.pow((25+math.sqrt(8.5)+8), (1/4)), 10)
     print (f"Результат даної функції, округлений до 10 знаків після коми, при X = 8, Y = 25, Z = 8.5 становить {a}.")
@@ -186,13 +186,6 @@ def text_operations():
     text2_array[6] = "s"
     new_text2 = "".join(text2_array)
     print(text2 + "\n" + new_text2)
-
-    
-
-    
-
-
-
 
 
 def tasks_call (i): 
