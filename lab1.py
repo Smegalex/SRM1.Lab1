@@ -90,7 +90,9 @@ def right_to_left_number (N):
     save_start = N
     for i in range (len(str(N))):
         reverse_numbers.append(str(N % 10))
-        N = int((N / 10))
+        print(N)
+        N = int(N / 10)
+        print(N)
     print (f"Число {save_start} записане справа наліво це {''.join(reverse_numbers)}")
 
 #10.
@@ -109,12 +111,15 @@ def greater_than_average_punishment (arr):
 #11.
 def is_prime_number (N):
     dividers_count = 0
+    dividers = []
     for i in range (2, N):
-        if N % i == 0: dividers_count += 1
+        if N % i == 0: 
+            dividers_count += 1
+            dividers.append(i)
     if dividers_count == 0:
         print (f"Число {N} є простим (ділиться націло тільки на одиницю і саме на себе).")
     else:
-        print(f"Число {N} не є простим, і має {dividers_count} дільників окрім одиниці та самого себе.")
+        print(f"Число {N} не є простим, і має {dividers_count} дільників {dividers} окрім одиниці та самого себе.")
 
 #12. завдання 24 зі списку
 def counting_function_result():
