@@ -90,9 +90,7 @@ def right_to_left_number (N):
     save_start = N
     for i in range (len(str(N))):
         reverse_numbers.append(str(N % 10))
-        print(N)
-        N = int(N / 10)
-        print(N)
+        N = N // 10
     print (f"Число {save_start} записане справа наліво це {''.join(reverse_numbers)}")
 
 #10.
